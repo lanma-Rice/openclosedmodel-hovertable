@@ -2,64 +2,87 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Open/Closed Model Table</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Open vs. Closed AI Models</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       padding: 20px;
+      background-color: #fff;
+    }
+    h1 {
+      font-size: 1.8em;
+      text-align: center;
+      margin-bottom: 20px;
     }
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-top: 20px;
-    }
-    th, td {
-      padding: 12px 15px;
-      border: 1px solid #ddd;
-      text-align: left;
-    }
-    tr:hover {
-      background-color: #f1f1f1;
-    }
-    thead {
-      background-color: #f8f8f8;
     }
     caption {
       font-weight: bold;
-      margin-bottom: 10px;
       font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 12px 16px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background-color: #1a1a4b;
+      color: white;
+    }
+    tr:hover {
+      background-color: #f3f3f3;
     }
     tbody td:first-child {
       font-weight: bold;
+      background-color: #fafafa;
     }
   </style>
 </head>
 <body>
+  <h1>Open vs. Closed AI Models</h1>
   <table>
-    <caption>Open/Closed Model</caption>
     <thead>
       <tr>
-        <th>Open</th>
-        <th>Closed</th>
+        <th></th>
+        <th>Open Models</th>
+        <th>Closed Models</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>Learning is flexible and dynamic</td>
-        <td>Learning is fixed and standardized</td>
+        <td>Source Code Available</td>
+        <td>Source code is publicly available, allowing inspection, modification, and distribution.</td>
+        <td>Source code is proprietary and not available to the public.</td>
       </tr>
       <tr>
-        <td>Students co-create knowledge</td>
-        <td>Instructors deliver knowledge</td>
+        <td>Customization</td>
+        <td>High level of customization, enabling tailored solutions.</td>
+        <td>Limited customization to vendor-provided features.</td>
       </tr>
       <tr>
-        <td>Multiple perspectives are welcomed</td>
-        <td>One correct answer is prioritized</td>
+        <td>Community Support</td>
+        <td>Strong community support with forums, user groups, and extensive documentation.</td>
+        <td>Support limited to what the vendor provides.</td>
       </tr>
       <tr>
-        <td>Technology is used to connect and collaborate</td>
-        <td>Technology is used to control and monitor</td>
+        <td>Security</td>
+        <td>Security through transparency, with vulnerabilities addressed by the community.</td>
+        <td>Security is opaque, relying on the vendor.</td>
+      </tr>
+      <tr>
+        <td>Cost</td>
+        <td>Often free to use, with no licensing fees.</td>
+        <td>Cost varies, often involving licensing fees and subscription costs.</td>
+      </tr>
+      <tr>
+        <td>Flexibility</td>
+        <td>High flexibility due to modifiability and extendability.</td>
+        <td>Lower flexibility as users are confined to vendor functionalities.</td>
       </tr>
     </tbody>
   </table>
